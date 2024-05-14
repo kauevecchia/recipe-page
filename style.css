@@ -19,7 +19,9 @@
     --color-dark-charcoal: #302d2c;
 
     --font-family-main: 'Outfit', sans-serif;
+    --font-family-headings: 'Young Serif', sans-serif;
     --font-size-main: 1rem;
+    --font-size-headings: 1.75rem;
 }
 
 * {
@@ -30,6 +32,11 @@
 
 h1, h2, h3, h4 {
     line-height: 1.2;
+    font-family: var(--font-family-headings);
+    font-size: var(--font-size-headings);
+    font-weight: 400;
+    color: var(--color-nutmeg);
+    margin-bottom: 1.75rem;
 }
 
 ul, ol {
@@ -50,4 +57,103 @@ body {
     line-height: 1.5;
     color: var(--color-wenge-brown);
     background: var(--color-eggshell);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.recipe-title {
+    font-size: 2.5rem;
+    color: var(--color-dark-charcoal);
+}
+
+.prep-title {
+    font-size: 1.275rem;
+    font-weight: 600;
+    color: var(--color-dark-raspberry);
+    margin-bottom: .5rem;
+}
+
+span {
+    font-weight: 700;
+}
+
+[data-cell="nutrient-value"] {
+    color: var(--color-nutmeg);
+    font-weight: 600;
+}
+
+li {
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+}
+
+li::marker {
+    font-variant: var(--color-nutmeg);
+    font-weight: 600;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-wrapper {
+    max-width: 45em;
+    margin: 6rem 0;
+    padding: 1.75rem;
+    border-radius: 1.5rem;
+    background: var(--color-white);
+}
+
+.recipe-img {
+    border-radius: .8rem;
+    margin-bottom: 2rem;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+hr {
+    outline: none;
+    border: none;
+    height: 1px;
+    background: var(--color-light-grey);
+    margin-top: 2rem;
+}
+
+.prep-time {
+    margin-top: 2rem;
+    padding: 1.75rem;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-light-grey);
+}
+
+@media (max-width: 500px) {
+    .recipe-wrapper {
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .recipe-img {
+        border-radius: 0;
+    }
+
+    .recipe-container {
+        padding: 0 1.75rem;
+    }
+
+    .recipe-title {
+        font-size: 2.2rem;
+    }
 }
