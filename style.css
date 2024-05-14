@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Outfit";
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Young Serif";
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root {
+    --color-nutmeg: #854632;
+    --color-dark-raspberry: #7b284f;
+    
+    --color-white: #ffffff;
+    --color-rose-white: #fff5fa;
+    --color-eggshell: #f3e6d8;
+    --color-light-grey: #e4ded8;
+    --color-wenge-brown: #5f574e;
+    --color-dark-charcoal: #302d2c;
+
+    --font-family-main: 'Outfit', sans-serif;
+    --font-size-main: 1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.2;
+}
+
+ul, ol {
+    padding: 0 1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    font-style: italic;
+    color: var(--color-dark-raspberry);
+}
+
+body {
+    font-family: var(--font-family-main);
+    font-weight: 400;
+    font-size: var(--font-size-main);
+    line-height: 1.5;
+    color: var(--color-wenge-brown);
+    background: var(--color-eggshell);
+}
